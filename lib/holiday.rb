@@ -42,10 +42,13 @@ end
 ############################## WORKS #############
 
  def all_supplies_in_holidays(holiday_hash)
-   holiday_supplies.each do |season, holidays|
-   puts "#{season.capitalize}:"
-     holidays.each do |holiday, supplies|
-       puts "#{holiday.to_s.split(' ').map{|w| w.capitalize}.join(' ')}: #{supplies.join(", ")}"
- end
- end
- end
+   holiday_hash.each do |season, holidays|
+   puts "#{season.to_s.capitalize}:"
+   holidays.each do |holiday, supplies|arr = holiday.to_s.gsub(/[_]/,"").split
+new_holiday = arr.collect {|h| h.capitalize}
+new_holiday = new_holiday.join(" ")
+puts " #{new_holiday}:#{supples.join(", ")}"
+end
+end
+end
+
