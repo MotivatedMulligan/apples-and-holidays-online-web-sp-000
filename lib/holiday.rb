@@ -39,6 +39,17 @@ puts key + ' : ' + value end
 end
 
 def all_holidays_with_bbq(holiday_hash)
+  bbq_arr = []
+holiday_hash.each do |season, season_info|
+  season_info.each do |holiday, supplies|
+    supplies.each do |item|
+       if item == "BBQ"
+        bbq_arr << holiday
+       end
+    end
+  end
+end
+
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 end
