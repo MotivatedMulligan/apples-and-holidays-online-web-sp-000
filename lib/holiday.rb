@@ -27,10 +27,10 @@ bbq_arr
 end
 ############################## WORKS #############
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-holiday_hash.each do |season, holiday_name| season end
-    #holiday_name.each do |holiday_name, supply_array|
- #key: hash = { } hash[:a] = 'a' hash[:a] # => 'a'.
-#holiday_hash.each_key { |season, holiday_name| season = [[key =>|, value]* ] }
+holiday_hash.each do |holiday_hash, holiday| if holiday_hash.to_s == season
+  holiday[holiday_name] = supply_array
+end
+ end
 end
 
 def all_winter_holiday_supplies(holiday_hash)
