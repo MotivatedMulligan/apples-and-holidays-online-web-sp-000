@@ -36,24 +36,15 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 ############################## WORKS #############
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-     holiday_hash.each do |holliday_season, holliday|
-    if holliday_season.to_s == season
-      holliday[holiday_name] = supply_array
-     end
-  end
+     holiday_hash[season][holiday_name] = supply_array
+     holiday_hash
 end
 
 
  def all_supplies_in_holidays(holiday_hash)
-   holiday_supplies.each do |season, holiday_hash|
-   puts "#{season}"
-
-     holiday_hash.each do |holiday, supply_list|
-       puts "#{holiday}"
-
-       supply_list.each do |supply|
-         puts "#{supply}"
-       end
-     end
+   holiday_supplies.each do |season, holidays|
+   puts "#{season.capitalize}"
+     holidays.each do |holiday, supplies|
+       puts "#{holiday.to_s.split('_').map{|w| w.capitalize}.join('_')} #{supplies.join(", ")}"
  end
  end
