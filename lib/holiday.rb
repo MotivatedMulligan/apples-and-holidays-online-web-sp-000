@@ -45,7 +45,7 @@ end
    holiday_supplies.each do |season, holidays|
    puts "#{season.capitalize}:"
      holidays.each do |holiday, supplies|
-       puts "#{holiday.to_s.split(' ').map{|w| w.capitalize}.join(' ')}: #{supplies.join(", ")}"
+       puts "#{holiday.to_s.split(' ').map.join(' '){|w| w.capitalize}.join(' ')}: #{supplies.join(", ")}"
  end
  end
  end
