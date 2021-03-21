@@ -48,3 +48,4 @@ end
        puts "#{holiday.to_s.split('_').map{|w| w.capitalize}.join('_')} #{supplies.join(", ")}"
  end
  end
+ end
