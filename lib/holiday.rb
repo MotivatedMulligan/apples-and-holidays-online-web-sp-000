@@ -51,4 +51,3 @@ puts " #{new_holiday}:#{supples.join(", ")}"
 end
 end
 end
-
