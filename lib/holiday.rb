@@ -26,6 +26,15 @@ end
 bbq_arr
 end
 ############################## WORKS #############
+
+def all_winter_holiday_supplies(holiday_hash)
+  supply_arr = []
+  holiday_hash[:winter].each do |k, v|
+    supply_arr << v
+  end
+  supply_arr.flatten
+end
+############################## WORKS #############
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
      holiday_hash.each do |holliday_season, holliday|
     if holliday_season.to_s == season
@@ -34,13 +43,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   end
 end
 
- def all_winter_holiday_supplies(holiday_hash)
-   supply_arr = []
-   holiday_hash[:winter].each do |k, v|
-     supply_arr << v
-   end
-   supply_arr.flatten
- end
 
  def all_supplies_in_holidays(holiday_hash)
 
