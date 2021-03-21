@@ -32,8 +32,9 @@ def all_supplies_in_holidays(holiday_hash)
   #   New Years: Party Hats
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
-  # etc.
-puts "#{key}:#{value}"
+  # etc.output.each do |key, value|
+holiday_hash.each do |key, value|
+puts "#{key}:#{value}"end
 end
 
 def all_holidays_with_bbq(holiday_hash)
