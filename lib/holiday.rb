@@ -39,13 +39,13 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
      holiday_hash[season][holiday_name] = supply_array
      holiday_hash
 end
-
+############################## WORKS #############
 
  def all_supplies_in_holidays(holiday_hash)
    holiday_supplies.each do |season, holidays|
-   puts "#{season.capitalize}"
+   puts "#{season.capitalize}:"
      holidays.each do |holiday, supplies|
-       puts "#{holiday.to_s.split('_').map{|w| w.capitalize}.join('_')} #{supplies.join(", ")}"
+       puts "#{holiday.to_s.split('_').map{|w| w.capitalize}.join(' ')}: #{supplies.join(", ")}"
  end
  end
  end
