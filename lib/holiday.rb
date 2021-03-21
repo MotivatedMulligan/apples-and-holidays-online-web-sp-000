@@ -49,4 +49,3 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.output.each do |key, value|
 holiday_hash.fetch_values (holiday_hash)
 end
-
