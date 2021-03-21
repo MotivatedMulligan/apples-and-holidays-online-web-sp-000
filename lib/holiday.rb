@@ -49,7 +49,7 @@ holiday_hash.each do |season, season_info|
     end
   end
 end
-
+bbq_arr
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 end
