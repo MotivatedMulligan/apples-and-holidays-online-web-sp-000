@@ -47,7 +47,7 @@ end
    holidays.each do |holiday, supplies|arr = holiday.to_s.gsub(/[_]/,"").split
 new_holiday = arr.collect {|h| h.capitalize}
 new_holiday = new_holiday.join(" ")
-puts " #{new_holiday}: #{supplies.join(", ")}"
+puts "  #{new_holiday}: #{supplies.join(", ")}"
 end
 end
 end
